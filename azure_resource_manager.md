@@ -1,7 +1,5 @@
 ## Azure Resource Manager
 
-x
-
 * Infra for app has many components
 * work w app's resource as a group
 * deploy/update/del all resources for solution as a whole
