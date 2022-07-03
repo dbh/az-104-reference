@@ -48,3 +48,30 @@
   * delete 
 
 ## Reorg azur resources
+
+## xxx
+
+## ARM Templates
+# 256 param limit
+# JSON
+# Required elements
+* Schema
+* Version
+* Resources
+
+
+
+## Bicep templates
+* DSL
+* Declarative syntax (again_)
+* less verbose than JSON
+* Type-safe
+* abstraction over ARM template JSON
+
+* Bicep template -> Resource Manager -> auto conversion to JSON ARM template -> azure
+* simple syntax
+* string interp instead of concat, or functions
+* modules
+* auto dep mgmt
+* type validation and intellisense
+
