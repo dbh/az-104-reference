@@ -23,6 +23,20 @@
    *  Attached svc by using SAS
       *  blob container, queue, table
 
+* Interface also connects to data lake storage
+* view/update entitiesin storage accounts
+
+### Emulators
+* Azure Storage Emu
+  * local SQL Server 2012 express local db
+  * emu table, queue, blob
+* Azurite
+  * node.js based
+  * supports most azure storage commands through api
+
+### Azure Data Lake Storage 
+* Gen 1
+* Gen 2
 
 ## Import/Export service
 * secure
