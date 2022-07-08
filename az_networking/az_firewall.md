@@ -43,7 +43,7 @@ features
 
 ## Benefits
 * cost savings. shared resources for mult workloads
-  * network virt appliances (NVAs), DNS servers, single loc
+  * network virt appliances (zs), DNS servers, single loc
   * bypass sub limits (peer virt networks from diff subs to central hub)
   * separations of concerns between SecOps, InfraOps, and   workloads (DevOps)
 
