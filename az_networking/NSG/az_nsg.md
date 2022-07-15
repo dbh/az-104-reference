@@ -51,7 +51,7 @@
 
 ## Determine NSG effective rules
 * NSGs evaluated independently
-* any allow rule must exist in both levels or traffice not allowed
+* any allow rule must exist in both levels or traffic not allowed
   * Subnet level
     * NIC level
 * for troubleshooting seem "Effective security rules" link

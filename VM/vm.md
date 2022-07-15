@@ -95,7 +95,7 @@
           * small to medium db
           * low - medium traffic web servers
         * compute opt
-          * medium traffice web server, network appliances, batch processes, app servers
+          * medium traffic web server, network appliances, batch processes, app servers
         * memory opt
           * relational db servers, med-lg cache, in-mem analytics
         * storage opt

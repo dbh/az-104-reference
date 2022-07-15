@@ -37,7 +37,7 @@
   * IP of LB can be dyn or static
     * external and internal static IP can be assigned
     * static ip often tied to DNS
-  * allow cust traffice to reach app
+  * allow cust traffic to reach app
     * load bal rules created on desired ports  
   * Internal and External LBs avail
 * External Name

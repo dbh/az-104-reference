@@ -19,7 +19,7 @@
 
 ## Impl
 ### Public
-* map pub IPs and port #s of incoming traffice to private Ips and port numbers of VM
+* map pub IPs and port #s of incoming traffic to private Ips and port numbers of VM
 * Map also response traffic from VM
 ### Internal
 * dir traffic to resources inside VNet or that us VPN 

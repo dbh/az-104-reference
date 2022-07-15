@@ -54,7 +54,7 @@
   * region
 * app settings
   * always on
-    * even when no traffice
+    * even when no traffic
     * req for webjobs or webjobs triggered usin gcron
   * ARR affinity
     * multi-instance deployment, sticky sessions

@@ -26,7 +26,7 @@ features
   * config during deployment. span mult avail zones
 * unrestricted cloud scalability
 * application FQDN filtering rules
-  * limit outbound HTTP/S traffice or Azure SQL Traffice to specificed list of FQDNs incl wild cards
+  * limit outbound HTTP/S traffic or Azure SQL traffic to specificed list of FQDNs incl wild cards
 * network traffic filtering rules
 * threat intelligence
 * mult pub ip addresses
@@ -71,11 +71,11 @@ features
   * translated address 
     * IP of svc (VM, internal LB, ...) that priv hosts or presents service
   * translated port
-    * port that inbound traffice will be routed by azure fw
+    * port that inbound traffic will be routed by azure fw
 
 
 ## Network rules
-* any non-HTTP/s traffice allowed through fw must have network rule
+* any non-HTTP/s traffic allowed through fw must have network rule
 * ex: one subnet must comm w resources in another subnet -> configure network rule from src to dst
 * attribs
   * name 
@@ -86,7 +86,7 @@ features
 
 ## App rules
 * app rules define FQDNs accessible from a subnet
-  * ex: specify windows update network traffice through firewall
+  * ex: specify windows update network traffic through firewall
 * attribs
   * name
     * src

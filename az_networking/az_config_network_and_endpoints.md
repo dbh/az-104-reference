@@ -50,7 +50,7 @@
 
 ## Endpoint uses
 * Service traffic from a vnet uses pub IP as source IPs
-* w service endpoints, traffice from vpn to service vnet private ips as the source
+* w service endpoints, traffic from vpn to service vnet private ips as the source
 * allows access to services w/o need for reserved IP addresses and firewalls
 
 ### Why
@@ -83,7 +83,7 @@
   * no regional restrictions
   * traffic stays on MS network
   * simplifynetwork arch
-  * secures traffice between endpoints
+  * secures traffic between endpoints
 * integ with on-prem and peered networks
   * access over privating peering or VPN tunnels
 * prot against data exfiltration for azur resources

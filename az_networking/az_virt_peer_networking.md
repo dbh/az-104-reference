@@ -8,6 +8,11 @@
     - [uses](#uses-1)
     - [user def routes and service chaining](#user-def-routes-and-service-chaining)
     - [Conn check](#conn-check)
+  - [Prep vnet for peering (ex)](#prep-vnet-for-peering-ex)
+    - [SSH between VMs on peered subnets](#ssh-between-vms-on-peered-subnets)
+      - [Get list of VMs with Ips](#get-list-of-vms-with-ips)
+      - [Do the SSH to the VM in Sales Subnet](#do-the-ssh-to-the-vm-in-sales-subnet)
+      - [From SalesVM SSH to VM in Marketing Vnet](#from-salesvm-ssh-to-vm-in-marketing-vnet)
 # Azure Virtual Peer Networking
 
 ## general
@@ -73,10 +78,106 @@ Allow gateway transit
 ### user def routes and service chaining
 * virt network peering - allows net hob in user def route to be IP of a VM in the peered virt network or VPN gateway
 * service chaining lets define user routes  
-  * direct traffice from one vnet to virt appliance/network gateway
+  * direct traffic from one vnet to virt appliance/network gateway
 
 ### Conn check
 * status
   * initiated
   * connected
-  * 
+
+
+## Prep vnet for peering (ex)
+* sales vnet
+  * north europe
+* marketing vnet
+  * north europe
+* Research
+  * west europe
+
+when creating each vnet (and subnet)
+* rg
+* name
+* address prefixes (non-overlapping CDIR)
+* subnet name
+* subnet prefixes
+
+az network vnet list --output table
+
+az vm create \
+    --resource-group learn-ef43caa0-7393-4c30-acc6-5be5ccd20d04 \
+    --no-wait \
+    --name SalesVM \
+    --location northeurope \
+    --vnet-name SalesVNet \
+    --subnet Apps \
+    --image UbuntuLTS \
+    --admin-username azureuser \
+    --admin-password <password>
+
+  watch -d -n 5 "az vm list \
+    --resource-group learn-ef43caa0-7393-4c30-acc6-5be5ccd20d04 \
+    --show-details \
+    --query '[*].{Name:name, ProvisioningState:provisioningState, PowerState:powerState}' \
+    --output table"
+
+  ***setup peering***
+  az network vnet peering create \
+    --name SalesVNet-To-MarketingVNet \
+    --remote-vnet MarketingVNet \
+    --resource-group learn-ef43caa0-7393-4c30-acc6-5be5ccd20d04 \
+    --vnet-name SalesVNet \
+    --allow-vnet-access
+
+***Note***
+
+Set it up both directions
+reciprocal
+
+check it
+```ps1
+az network vnet peering list \
+    --resource-group learn-ef43caa0-7393-4c30-acc6-5be5ccd20d04 \
+    --vnet-name SalesVNet \
+    --query "[].{Name:name, Resource:resourceGroup, PeeringState:peeringState, AllowVnetAccess:allowVirtualNetworkAccess}"\
+    --output table
+```
+
+check routes for a VM's nic
+```ps1
+az network nic show-effective-route-table \
+    --resource-group learn-ef43caa0-7393-4c30-acc6-5be5ccd20d04 \
+    --name SalesVMVMNic \
+    --output table
+```
+
+ex
+```
+Source    State    Address Prefix    Next Hop Type      Next Hop IP
+--------  -------  ----------------  -----------------  -------------
+Default   Active   10.2.0.0/16       VnetLocal
+Default   Active   10.1.0.0/16       VNetPeering
+Default   Active   0.0.0.0/0         Internet
+```
+
+### SSH between VMs on peered subnets
+
+#### Get list of VMs with Ips
+
+```ps1
+az vm list \
+    --resource-group [sandbox resource group name] \
+    --query "[*].{Name:name, PrivateIP:privateIps, PublicIP:publicIps}" \
+    --show-details \
+    --output table
+```
+#### Do the SSH to the VM in Sales Subnet
+```bash
+ssh -o StrictHostKeyChecking=no azureuser@<SalesVM public IP>
+```
+
+#### From SalesVM SSH to VM in Marketing Vnet
+```bash
+ssh -o StrictHostKeyChecking=no azureuser@<MarketingVM private IP>
+```
+
+***Note*** Can only SSH directly between VMs in Peered VNets.  Research not directly peered to Sales, so cannot SSH from ResearchVM to SalesVM. Makes sense

@@ -13,7 +13,7 @@
 * Virtual network
 * Load Balancer
 * Application Gateway
-* Traffice Manager profile
+* traffic Manager profile
 * Virtual network gateway
 * Virtual WAN
 

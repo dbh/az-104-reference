@@ -12,7 +12,7 @@
 ## NSG
 * VNets foundation azure network model
 * isolation and prot
-* main tool to use to enforce / control net traffice rules
+* main tool to use to enforce / control net traffic rules
 * NSGs provide a sw fw
 * SGs can be assocate to a network interface or subnet 
 
