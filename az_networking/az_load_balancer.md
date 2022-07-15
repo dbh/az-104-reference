@@ -5,9 +5,16 @@
     - [Internal](#internal)
   - [SKU determination](#sku-determination)
   - [Backend pools](#backend-pools)
+    - [SLA w](#sla-w)
+    - [Avail set](#avail-set)
+    - [Avail zone](#avail-zone)
   - [Balancer rules](#balancer-rules)
   - [Also](#also)
     - [Health probe](#health-probe)
+  - [Configure a pub LB](#configure-a-pub-lb)
+    - [Distrib modes](#distrib-modes)
+  - [LB and Remote Desktop Gateway](#lb-and-remote-desktop-gateway)
+  - [LB and media upload](#lb-and-media-upload)
 # AZ Load Balancer
 
 ## general
@@ -62,6 +69,13 @@ Diff
     * NSG optional
     * vs, closed to inbound, internal traffic from vnet to internal LB allowed
   * no sla vs 99.99
+* std
+  * https health probes
+  * avail zones
+  * diagnostics azure monitor
+  * HA ports
+  * outbound rules
+  * 99.99% SLA
 
 ## Backend pools
 
@@ -75,10 +89,26 @@ Diff
     * up to 300 instances
 * config in backend pool blade
   
+### SLA w 
+
+|config|SLA|info|
+|-|-|-|
+|avail set|99.95%|prot from hw fail in datacenter|
+|avail zone|99.99%|prot from entire datacenter failure|
+
+### Avail set
+* logical grouping
+* isolate VM resources from each other when deployed
+* azure ensures the VMs are on diff phys servers, rack, storage units, network switches
+
+### Avail zone
+* groups one or more datacenters that have independent power,cooling,networking. VMs in avail zone are in diff phys locations within same region.
+
 ## Balancer rules
 * LB rule defines how traffic distrib to bakend pool
 * rule maps given frontent IP / port combo to backend IP addr(s) and ports combo
 * health probe
+
 
 ## Also
 * LB can be used in conjuction with NAT rules
@@ -112,3 +142,40 @@ Diff
   * if port listener on VM exists, probe succeeds
 * Guest agent probe 
   * no recommended if other methods avail
+
+## Configure a pub LB
+* five tuple hash whatever used
+
+### Distrib modes
+* source IP affinity
+  * sticky/sesion/client IP
+  * could use 5 or 
+  * 2 tuple hash
+    * src ip, dst ip
+  * 3
+    * src,dst,proto 
+
+* config
+  * azure LB
+    * LB rules
+      * name
+      * ip version
+      * front end IP
+      * proto
+      * port
+      * backend port
+      * backend pool
+      * Session persistence
+        * None
+        * client ip
+        * Client IP and protocol
+
+## LB and Remote Desktop Gateway
+* Remote Desktop Gateway is win svc
+* enable clients on internet to make RDP thru FW to remote desktop servers
+* 5 tuplic hash in LB incompatible
+* need source IP affinity to work with LB
+## LB and media upload
+* client init session through TCP (remain connected)
+* file upload via UDP
+* use source ip affinity
