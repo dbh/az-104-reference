@@ -13,7 +13,7 @@
 
 ## Connection options
 ### Registering
-* For corp ownded devices
+* For corp owned devices
 * managed dev identity, enable, disable, etc
 
 ### Joining
