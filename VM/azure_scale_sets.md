@@ -58,7 +58,7 @@
   * min Vms
   * max VMs
 * scale out
-  * CPu threshold %
+  * CPU threshold %
   * duration in min
   * number VMs to inc by
 * scale in
