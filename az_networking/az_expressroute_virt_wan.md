@@ -56,7 +56,7 @@
   * across on-prem sites, via ExpressRotue circuits
     * ex  Silicon valley, texas, etc
     * data between those goes across MS network
-* badwidth options
+* bandwidth options
   * purchase
 * flex bill
 
