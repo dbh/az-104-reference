@@ -63,5 +63,4 @@
 
 ## Planning network
 * create a new one
-* join an existing on
-* 
+* join an existing one
