@@ -32,7 +32,7 @@
 * Create and Provide powershell script
   * arguments you want to pass in
 * after upload, immediate exec
-* scripts can be downloaded from GZ Storage or Github or provided at extension runtime in portal
+* scripts can be downloaded from AZ Storage or Github or provided at extension runtime in portal
 
 Powershell
 
