@@ -29,7 +29,7 @@
 * Kubernetes API schedules the rest
 
 ## Horizontal pod autoscaler (HPA)
-* monoitor resource demand
+* monitor resource demand
 * auto scale replcias #
 * checks Metrics API, every 30 sec
 * works w AKS clsuters deployed w Metrics Server for K 1.8+
