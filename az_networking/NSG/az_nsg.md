@@ -1,4 +1,4 @@
-- [Azure Security Groups](#azure-security-groups)
+- [Azure Network Security Groups](#azure-security-groups)
   - [What](#what)
   - [Configure](#configure)
     - [Rule details](#rule-details)
@@ -6,7 +6,7 @@
     - [Outbound](#outbound)
   - [Determine NSG effective rules](#determine-nsg-effective-rules)
   - [Creating inbound rule](#creating-inbound-rule)
-# Azure Security Groups
+# Azure Network Security Groups
 
 ## What
 * limit network traffic to resource in virt network
