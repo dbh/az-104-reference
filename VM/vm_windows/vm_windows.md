@@ -37,7 +37,7 @@
 2. Temp disk , temp storage for OS or apps, d, sized based on VM size
    1. not persistent
 3. Recommend
-   1. create dedicated data disks, <=32 GB each>
+   1. create dedicated data disks, <=32 GB each
 
 ## Unmanaged vs Managed disks
 * unmanaged
