@@ -101,6 +101,7 @@ when creating each vnet (and subnet)
 * subnet name
 * subnet prefixes
 
+```bash
 az network vnet list --output table
 
 az vm create \
@@ -127,6 +128,7 @@ az vm create \
     --resource-group learn-ef43caa0-7393-4c30-acc6-5be5ccd20d04 \
     --vnet-name SalesVNet \
     --allow-vnet-access
+```
 
 ***Note***
 
