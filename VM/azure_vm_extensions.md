@@ -18,7 +18,7 @@
     * config script inside VM
 * ext can be
   * managed by CLI, powershell, ARM templates, azure portal
-  * bundled with new VM deployment or runa gainst existing sys
+  * bundled with new VM deployment or run against existing sys
 * Diff extensions for diff OS
 
 
