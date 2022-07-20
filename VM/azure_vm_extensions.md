@@ -55,7 +55,7 @@ consider
 ## Desired State Config (in PS)
 * deploying/managing config data for sw services and manage env
 * set of Windows PS lang extensionss, cmdlets, resources
-* declaritive 
+* declarative 
 * centers around creating configurations
 ### configuration
 * script
