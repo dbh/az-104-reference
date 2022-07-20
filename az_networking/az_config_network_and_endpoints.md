@@ -82,11 +82,11 @@
   * global 
   * no regional restrictions
   * traffic stays on MS network
-  * simplifynetwork arch
+  * simplify network arch
   * secures traffic between endpoints
 * integ with on-prem and peered networks
-  * access over privating peering or VPN tunnels
-* prot against data exfiltration for azur resources
+  * access over private network peering or VPN tunnels
+* prot against data exfiltration for azure resources
   * priv link to map private endpoints to azure PaaS resources
   * only mapped resources accessible
 * svcs delivered directly to customers' virtual networks
