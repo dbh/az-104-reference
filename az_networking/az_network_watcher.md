@@ -6,7 +6,7 @@
 * network  mon
 * trigger capture w alerts
 * real-time perf info
-* insight into traffice using flow logs
+* insight into traffic using flow logs
 * diag VPN conn issues
 * NSG flow llogs
 
