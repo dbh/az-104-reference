@@ -48,7 +48,7 @@
   * ER circuit , 2 conn to MS Enterprise edge routers
   * MSEE
   * conn provider/your network edge
-  * MS requireds dual BGP conn from conn provider/network edge to each MSEE
+  * MS requires dual BGP conn from conn provider/network edge to each MSEE
 * Connectivity to all regions in geo politicla region
 * Global conn w ExpressRoute premium add-on
   * go past geo political boundaries
