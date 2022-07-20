@@ -26,7 +26,7 @@
 ## Create
 * details
   * init instance count
-  * size (ex Stndard D2sV3)
+  * size (ex Standard D2sV3)
   * spot instance (ye/no)
     * low priority VMs allocated from excess compute capacity
     * spot enable several workload types to run at reduced cost
