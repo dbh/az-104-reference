@@ -14,7 +14,7 @@
 * redundancy
   * mult VMs in set
 * each app tier in separate availability sets
-* combine load balancer with availabilitysets
+* combine load balancer with availability sets
 * use managed disks with the VMs
 
 ## How/Create
