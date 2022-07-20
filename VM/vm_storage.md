@@ -16,7 +16,7 @@
 * stored as VHDs
 
 ## Data disks
-* managed disk attached to VM to store appd ata
+* managed disk attached to VM to store app data
 * other data need to keep around
 * reg as SCSI drives
 * labeled w letter of choice
