@@ -21,7 +21,7 @@
 * can be deployed in azure availability zones
   * bring resiliency scalability hgher avail to virt network gateways
   * phys and logically separate gateways within a region
-  * protoect on-prem network connectivity to azure from zone level failures
+  * protect on-prem network connectivity to azure from zone level failures
 
 ## Types
 * site to site
