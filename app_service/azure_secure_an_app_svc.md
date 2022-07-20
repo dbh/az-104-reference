@@ -21,7 +21,7 @@
   * manage authenticated session
   * injects ident info into request headers
 * configuration settings
-  * allow annon requests
+  * allow anon requests
   * allow only authenticated requests
     * /.auth/login/<provider>
 * logging and tracing
