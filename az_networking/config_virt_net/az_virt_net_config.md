@@ -68,7 +68,7 @@
   * Role-based VMs like Domain controllers and DNS Servers
 
 ### Create public IP addressing
-* IPv 4, 6, or botgh
+* IPv 4, 6, or both
 * SKU - has to match SKU of LB 
   * basic
   * std
