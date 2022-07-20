@@ -59,7 +59,7 @@
   * no pub IPs used or exposed
   * add virt network rule to allow
 * optimal routing for azure service traffic from vnet
-* endpoints always take svc traffic directly from vnet to service on azure backbonenet
+* endpoints always take svc traffic directly from vnet to service on azure backbone net
 * simple / less mgmt overhead
 
 ### Add svc endpoint
