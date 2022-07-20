@@ -45,7 +45,7 @@
 
 ### Outbound
 * 3 defaults
-  * All all virt network to virtnetwork
+  * allow all virt network to virtnetwork
   * all any outbound to internet
   * deny all outbound
 
