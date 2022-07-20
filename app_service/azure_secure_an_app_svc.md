@@ -8,7 +8,7 @@
   * sec
   * federation
   * encryption
-  * JSOn
+  * JSON
   * JWT mgmt
   * grant types... 
   * blah blah
