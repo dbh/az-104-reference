@@ -73,7 +73,7 @@
     * conf azure cosmos account to allow access from specific subnet of vnet
     * then, cosmos side limitations can be restricted to only allowing from that subnet, etc
   * azure key vault
-    * allo restrict access to specified vnet. also restrict to live of IP v4 ranges
+    * allow restrict access to specified vnet. also restrict to live of IP v4 ranges
   * azure service bus and azure event hubs
     * enables sec access to messaging from workloads like Vms. traffic secured on both ends
 
