@@ -12,4 +12,4 @@
 
 * roles
   * owner, contrib, network contrib
-* Vuz network topo
+* Viz network topo
