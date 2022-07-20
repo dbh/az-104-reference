@@ -19,7 +19,7 @@
       * ...
 
 * Makese conns fast, reliable, private
-* private conn between azure data centers/infra and on-premn
+* private conn between azure data centers/infra and on-prem
 
 * estab conn to azure at 
   * express route loc
