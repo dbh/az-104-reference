@@ -67,7 +67,7 @@
   * traffic manager profile
   * azure CDN endpoint
   * pub IP
-  * front doorprofile
+  * front door profile
 * DNS supports
   * A
   * AAAA
