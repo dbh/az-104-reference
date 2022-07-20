@@ -15,7 +15,7 @@
 * Command line tools
   * CLI (bash)
   * PowerShell
-* asl same tools via Azure Cloud Shell
+* same tools via Azure Cloud Shell
 * Write scripts
 
 az vm ....
