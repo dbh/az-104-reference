@@ -7,7 +7,7 @@
 * each zone 
   * 1+ data centers
 * min of 3 zones in a region
-* zone redundant svcs replictae apps/data across zones to protect from single points
+* zone redundant svcs replicate apps/data across zones to protect from single points
 * With Availability Zones, Azure offers industry best 99.99% VM uptime SLA.
 
 ## Impl
