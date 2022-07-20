@@ -4,7 +4,7 @@
 Planned and Unplanned failures
 3 scenarios
 * Unplanned hw maint
-  * azure predices hw or any platform component is about to fail
+  * azure predicts hw or any platform component is about to fail
   * Live Migration tech to migrate VMs
     * pauses VM for short time
 * unexpected downtime
