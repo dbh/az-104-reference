@@ -49,7 +49,7 @@
   * MSEE
   * conn provider/your network edge
   * MS requires dual BGP conn from conn provider/network edge to each MSEE
-* Connectivity to all regions in geo politicla region
+* Connectivity to all regions in geo political region
 * Global conn w ExpressRoute premium add-on
   * go past geo political boundaries
 * across on-prem conn w ExpressRoute Globala Raech
