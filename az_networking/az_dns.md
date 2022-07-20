@@ -44,7 +44,7 @@
 
 ### delegate
 * need to know name servers in done
-* Azure DNS allocs name servers from a phone, when zone created
+* Azure DNS allocs name servers from a pool, when zone created
 * azure DNS auto created authoritative NS recs in zone
 * go to registrar's entry for domain
   * change DNS servers over to the ones from azure
