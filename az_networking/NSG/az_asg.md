@@ -13,5 +13,5 @@
 * max ASGs per sub.
 * in a single rule
   * at most ASG as source and 1 ASG as dst
-* ASGs can only have NICs in the same VNEt
+* ASGs can only have NICs in the same VNet
 * ASGs (src and dst) must bein same virt network
