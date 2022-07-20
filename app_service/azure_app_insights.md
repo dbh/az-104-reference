@@ -13,7 +13,7 @@
   * hybrid
   * pub cloud
 * integ w DevOps
-* connection opints to varienty of dev tools
+* connection points to varienty of dev tools
 * monitor/analyze mobile apps by integ w visual studio app center
 * monitors
   * request rates, response times, failure rates
