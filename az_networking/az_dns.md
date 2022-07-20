@@ -15,7 +15,7 @@
 * host/config/admin DNS for org on az infra
 * same creds,APIs, tools, billing
 * on creating a sub, initial domain name created [subname].onmicrosoft.com
-* custon domain
+* custom domain
   * point the initial domain name / sub ofer to a custom domain name
 * req: Global Admin
 * custom domain name must be added to "your directory" and verified
