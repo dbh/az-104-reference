@@ -23,7 +23,7 @@
 
 
 ## Custom Script Extensions (CSE)
-* auto launch /exec VM customizationt ask post config
+* auto launch /exec VM customization ask post config
 * ex
   * stop VM
   * install software
