@@ -32,4 +32,4 @@
     * through Azure Portal
     * over ssl
     * public IPs not needed
-    * 
+    
