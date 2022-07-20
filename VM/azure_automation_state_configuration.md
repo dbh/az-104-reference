@@ -81,7 +81,7 @@
 * Windows Server 2008 R1 SP1, win 7, or later
 * other
   * port TCP 443 for outbound
-  * global url: *.zure-automation.net
+  * global url: *.azure-automation.net
   * Agent service URL (uses workspaceId)
 
 
