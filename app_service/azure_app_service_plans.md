@@ -31,7 +31,7 @@
     * cannot scale out
   * other
     * app is in an app service plan
-    * all vminstances configured in app svc plan
+    * all vm instances configured in app svc plan
     * if mult apps in same app svc plan, all run on same VMs
     * diagnostic logs, backups, webjobs use same CPU cycles / memory on same VMs
   * app svc plan
