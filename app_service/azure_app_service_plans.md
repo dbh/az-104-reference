@@ -74,7 +74,7 @@ Tiers
 * no auto scale
 * max instances up to 3
 ### Standard
-* prod workloads, ehance scale and perf
+* prod workloads, enhance scale and perf
 * unlim apps
 * 250 GB space
 * autoscale 
