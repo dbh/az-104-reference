@@ -8,7 +8,7 @@
 * real-time perf info
 * insight into traffic using flow logs
 * diag VPN conn issues
-* NSG flow llogs
+* NSG flow logs
 
 * roles
   * owner, contrib, network contrib
