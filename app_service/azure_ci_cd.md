@@ -47,7 +47,7 @@
   * app service authentication settings, if enabled
 
 #### Swapped
-* geneal, such as framework, ver, web sockets
+* general, such as framework, ver, web sockets
 * app settings (can be made sticky)
 * conn strings (can be made sticky)
 * handler mapping 
