@@ -24,7 +24,7 @@
   * provision/manage VPNs
   * link VNets w other VNets
   * link VNets with on-prem infra (hybrid / cross premises solutions)
-* each VNet has on CIDR block
+* each VNet has own CIDR block
 * can be linked to other 
     * VNets
     * on-prem networks
