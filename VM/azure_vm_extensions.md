@@ -59,7 +59,7 @@ consider
 * centers around creating configurations
 ### configuration
 * script
-* env made up of computres (nodes) w specific characteristics
+* env made up of computers (nodes) w specific characteristics
 * char ex: 
   * Specific windows feature is enabled
   * deploying sharepoint
