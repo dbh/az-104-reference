@@ -36,7 +36,6 @@
   * set of virt server resources
   * plan has a size/sku/pricing tier
   * can have mult apps
-  * 
 
 ## Deploy
 ### Audo deploy
