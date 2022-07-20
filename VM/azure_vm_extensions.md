@@ -49,7 +49,7 @@ consider
 * failure events
   * will script stop if there is an error, like out of disk space or security restriction?
 * sensitive data
-  * may need credts etc. how to protect?
+  * may need creds etc. how to protect?
 
 
 ## Desired State Config (in PS)
