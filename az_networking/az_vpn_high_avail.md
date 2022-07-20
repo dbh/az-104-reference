@@ -10,7 +10,7 @@
   * resumes S2S VPN or Vnet to VNet connections
   * swith over w brief interruption
 * planned main
-  * connectiivty restored 10-15 seconds
+  * connectivity restored 10-15 seconds
 * unplanned
   * depends
     * about 1 min to 1.5 min for worst case
