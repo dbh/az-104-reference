@@ -32,7 +32,7 @@
 
 ## Managed disks
 * a VHD
-* "managed" - abstraction over page blobs, blob containers, azture storage accounts
+* "managed" - abstraction over page blobs, blob containers, azure storage accounts
 * ~ similar to phys disk
 * virtualized
 * stored as page blobs
