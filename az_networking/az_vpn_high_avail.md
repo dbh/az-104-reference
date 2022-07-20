@@ -6,7 +6,7 @@
 ## Active/standby
 * every azure vpn gateway has 2 instances in an active-standby config
 * for maint or disruption
-  * standby instnace takes over automatically
+  * standby instance takes over automatically
   * resumes S2S VPN or Vnet to VNet connections
   * swith over w brief interruption
 * planned main
