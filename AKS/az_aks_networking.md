@@ -7,7 +7,7 @@
 ## General 
 * abstraction layer to virt networking
 * nodes connected to to virt network
-* aprovides inbound/outbound connectivity for pods
+* provides inbound/outbound connectivity for pods
 * kube-proxy run on each node to provide ^ network features
 
 * Services logically group pods
