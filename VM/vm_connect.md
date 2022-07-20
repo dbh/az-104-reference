@@ -11,7 +11,7 @@
       * port 5986 (can be changed)
       * command line session to azure VM
       * can also run non-interactive PS
-      * can use certificates for addisional session sec
+      * can use certificates for additional session sec
       * cert goes in Key Vault
   * lin
     * SSH
