@@ -37,7 +37,8 @@
   * define 
     * min, max replica #s. 
     * define metric to monitor
-    * 
+
+
 ### Cooldown of scaling events
 * prevent thrash after a change and race events
 * how long HPA must wait before checking Metrics again
