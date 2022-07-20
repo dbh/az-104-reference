@@ -74,7 +74,7 @@
   * CNAME
 * reasons for alias records
   * prevent dangling DNS
-    * couples lifecycle of DNS record with an azur resource
+    * couples lifecycle of DNS record with an azure resource
   * update DNS rec set automatically when IP addrs change
   * host LB apps at the zone apex
     * allow for zone apex resource routing to traffic manager
