@@ -5,9 +5,9 @@
 
 ## what
 * enable config network security as extension of app structure
-* group Vms and define network sec policies based on groups
+* group VMs and define network sec policies based on groups
 * reuse sec policies 
-* w/o worhing about explicit IPs
+* w/o worrying about explicit IPs
 
 ## Limits
 * max ASGs per sub.
