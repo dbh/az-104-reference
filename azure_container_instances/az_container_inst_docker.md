@@ -18,9 +18,9 @@
 
 * Terms
   * container
-  * contaimer image
+  * container image
   * build
   * pull
   * push
   * Dockerfile
-  * 
+  
